@@ -126,11 +126,11 @@ class pivy_build(build):
 
     SWIG_SUPPRESS_WARNINGS = "-w302,306,307,312,314,325,361,362,467,389,503,509,510"
     if sys.version_info.major < 3:
-        SWIG_PARAMS = "-c++ -python -includeall -modern -D__PIVY__ " + \
+        SWIG_PARAMS = "-c++ -python -includeall -modern -threads -D__PIVY__ " + \
                       "-I. -Ifake_headers -I\"%s\" %s -o %s_wrap.cpp " + \
                       "interfaces" + os.sep + "%s.i"
     else:
-        SWIG_PARAMS = "-c++ -python -includeall -modern -py3 -D__PIVY__ " + \
+        SWIG_PARAMS = "-c++ -python -includeall -modern -py3 -threads -D__PIVY__ " + \
                       "-I. -Ifake_headers -I\"%s\" %s -o %s_wrap.cpp " + \
                       "interfaces" + os.sep + "%s.i"
 

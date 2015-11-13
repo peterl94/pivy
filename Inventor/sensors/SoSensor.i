@@ -2,6 +2,7 @@
 static void
 SoSensorPythonCB(void * data, SoSensor * sensor)
 {
+  SWIG_Python_Thread_Block block;
   swig_type_info * swig_type = 0;
   char * sensor_cast_name = NULL;
   PyObject * func, * arglist;

@@ -26,8 +26,6 @@
 #endif
 %}
 
-
-
 %define COIN_MODULE_DOCSTRING
 "Pivy is a Coin binding for Python. Coin is a high-level 3D graphics
 library with a C++ Application Programming Interface. Coin uses

@@ -2,6 +2,7 @@
 static void
 sensorQueueChangedPythonCB(void * userdata)
 {
+  SWIG_Python_Thread_Block block;
   PyObject *func, *arglist;
   PyObject *result;
 
